@@ -10,3 +10,4 @@ A repo that contains my training of some hacks in Laravel
 - Mail 
 - Custom Requests
 - Queue and Jobs
+- Collections
