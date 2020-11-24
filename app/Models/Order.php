@@ -9,6 +9,8 @@ class Order extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['status', 'paid', 'track_code'];
+
     public function scopeStatus($query,$status){
         return $query->where('status',$status);
     }

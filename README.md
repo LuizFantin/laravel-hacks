@@ -6,3 +6,5 @@ A repo that contains my training of some hacks in Laravel
 - Global Scopes and Local Scopes
 - Magic Scopes
 - Factories and Seeders
+- Observers
+- Mail 
