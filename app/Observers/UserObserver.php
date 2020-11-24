@@ -3,7 +3,8 @@
 namespace App\Observers;
 
 use App\Models\User;
-use Illuminate\Support\Facades\Mail;
+use App\Jobs\SendCreatedUserEmail;
+
 
 class UserObserver
 {
@@ -15,11 +16,7 @@ class UserObserver
      */
     public function created(User $user)
     {
-        Mail::send([], [], function($message){
-            $message->to('luizinhofantin@gmail.com')
-            ->subject('Novo usuário criado')
-            ->setBody('Um novo usuário foi criado na sua plataforma super mega ultra legal');
-        });
+        SendCreatedUserEmail::dispatch($user);
     }
 
     /**
