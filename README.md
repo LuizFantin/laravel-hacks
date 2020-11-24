@@ -1,6 +1,8 @@
 # laravel-hacks
 A repo that contains my training of some hacks in Laravel
 
-#Hacks:
+# Hacks:
 - Mutators and Acessors
 - Global Scopes and Local Scopes
+- Magic Scopes
+- Factories and Seeders
